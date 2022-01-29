@@ -15,15 +15,11 @@ void embaralha (char arr[], int size) {
         char t = arr[i];
         arr[i] = arr[j];
         arr[j] = t;
-    //printf("j: %i \n", j);
-    //printf("i: %i \n", i);
-    //printf("t: %c \n", t);
     }
     
 }
 
 int verifica_palavra (char arr[], int size) {
-	//printf("size: %i \n", size);
 	int i = 0;
 	if (size < 5 || size > 50) {
 		return 0;
@@ -56,10 +52,9 @@ int main() {
 		    	i++;
 		    }
 		    tamanho = i;
-		    //printf("tamanho: %i \n", tamanho);
 		    
 			int m = verifica_palavra(palavra, tamanho);
-	    	printf("O verifica_palavra retornou %i\n", m);
+	    	//printf("O verifica_palavra retornou %i\n", m);
 	    	
 	    	if (m == 1) {
 	    		printf("A palavra %s se tornou", palavra);
